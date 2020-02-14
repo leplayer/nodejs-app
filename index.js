@@ -9,7 +9,8 @@ app.use((req, res, next) => {
 });
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  var timeInMs = Date.now();
+  res.send('Hello World!' + timeInMs);
 });
 
 app.listen(3000, function () {
